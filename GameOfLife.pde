@@ -51,7 +51,7 @@ public void keyPressed() {
   if(key == ' ') {
     running = !running;
   }
-  if(key == 'c') {
+  if(key == 'c' || key == 'C') {
     for(int r = 0; r < NUM_ROWS; r++) {
       for(int c = 0; c < NUM_COLS; c++) {
         buttons[r][c].setLife(false);  
@@ -59,7 +59,7 @@ public void keyPressed() {
     }
     running = false;
   }
-  if(key == 'r') {
+  if(key == 'r' || key == 'R') {
     for(int r = 0; r < NUM_ROWS; r++) {
       for(int c = 0; c < NUM_COLS; c++) {
         buttons[r][c] = new Life(r, c);  
@@ -69,7 +69,7 @@ public void keyPressed() {
     Color = color((float)Math.random() * 256 + 100, (float)Math.random() * 256 + 100, (float)Math.random() * 256 + 100, (float)Math.random() * 256 + 100);
     running = false;
   }
-  if(key == 'p') {
+  if(key == 'p' || key == 'P') {
     Color = color((float)Math.random() * 256 + 100, (float)Math.random() * 256 + 100, (float)Math.random() * 256 + 100, (float)Math.random() * 256 + 100);  
   }
   if(keyCode == UP && frames < 10) {
